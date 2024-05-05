@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Adja Gueye - S2110852-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        android:elevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:backgroundTint="@color/semiTransparent"
+        card_view:cardBackgroundColor="@color/semiTransparentColor"
+        app:cardElevation="5dp"
+        android:layout_margin="@dimen/card_margin"
+        app:cardBackgroundColor="@android:color/white"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/bg_description"
+                    android:tint="@color/semiTransparentColor"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/minimum_temperature"
+                       android:layout_width="205dp"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:text="@string/card_content"
+                       android:textColor="@android:color/white"
+                       android:textSize="40sp" />
+
+                   <TextView
+                       android:id="@+id/weather"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/weathericons"
+                       android:padding="@dimen/detail_size"
+                       android:textColor="@android:color/white"
+                       android:textSize="50sp" />
+               </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/card_title"
+                    android:id="@+id/card_title"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wind_speed"
+                    android:text="@string/card_content"
+                    android:textSize="@dimen/detail_size"
+                    android:textColor="@color/colorSecondaryText" />
+
+                <Button
+                    android:id="@+id/more_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_more_details"
+                    android:textStyle="bold"
+                    android:padding="@dimen/text_margin"
+                    android:textColor="@android:color/white"
+                    android:theme="@style/PrimaryElevatedButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

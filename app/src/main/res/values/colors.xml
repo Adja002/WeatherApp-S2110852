@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Adja Gueye - S2110852-->
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorSecondaryText">#3F51B5</color>
+    <color name="gradient_one">#03A9F4</color>
+    <color name="gradient_two">#1976D2</color>
+    <color name="gradient_moonrise">#E3F2FD</color>
+    <color name="gradient_moonrise_two">#BBDEFB</color>
+    <color name="semiTransparentColor">#9F13121B</color>
+    <color name="semiTransparent">#E9F6F7FA</color>
+    <color name="black_overlay">#66000000</color>
+</resources>
+
+

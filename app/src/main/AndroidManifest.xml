@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="me.adjagueye.gcu.mpd.weatherforecast">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <service
+            android:name="me.adjagueye.gcu.mpd.weatherforecast.service.WeatherUpdateService"
+            android:label="Weather Update Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver android:name="me.adjagueye.gcu.mpd.weatherforecast.service.JobBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"/>
+
+        <activity
+            android:name="me.adjagueye.gcu.mpd.weatherforecast.activities.MoreDetail"
+            android:label="@string/title_activity_more_detail" />
+
+        <activity
+            android:name="me.adjagueye.gcu.mpd.weatherforecast.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
