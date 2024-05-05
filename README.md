@@ -8,8 +8,7 @@ When you load the app, you will see the home page, where you can access the curr
 
 ## Weather Information
 
-- **Current Weather:** Press the "More Details" button to view more details about the current weather.
-- **Three-Day Forecast:** Similarly, you can view more information about the three-day weather forecast by pressing the "More Details" button in that section.
+- **Three-Day Forecast:** You can view more information about the three-day weather forecast by pressing the "More Details" button in that section.
 
 ## Available Locations
 
@@ -28,7 +27,7 @@ Access the side menu by clicking the icon located at the top-left corner of the 
 
 - **Settings:** Adjust app settings, including dark or light mode and refresh intervals.
 - **Share:** Share the weather details with your friends
-- **Notifications:** Configure notifications for updates or alerts.
+- **Update:** Configure time for updates or alerts.
 
 ## Testing Environment
 
